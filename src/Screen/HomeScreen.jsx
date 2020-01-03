@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { View, Text, Button, TextInput, ScrollView, FlatList, Modal,TouchableOpacity } from 'react-native';
+import { View, Text, Button, Image, TextInput, ScrollView, FlatList, Modal,TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import {  } from 'react-native-gesture-handler';
+import BCRA from '../../assets/245px-Bcra_logo.png';
 
-const HomeScreen = props => {
+const HomeScreen = (props) => {
 
     const [enteredGoal, setEnteredGoal] = useState();
     const [courseGoal, setCourseGoal] = useState([]);
@@ -23,14 +24,35 @@ const HomeScreen = props => {
         console.log(courseGoal);
     }
 
-
+   
     /* MODULARIZAR ESTOS COMPONENTES EN 3!!! */
     return (
         <ScrollView 
         style={{margin:10}}>  
+
+        <View style={{   
+            width:'100%',
+            height:40,
+            backgroundColor:'#ee11'
+        }}>
+
+        <Image source={BCRA} style={{
+            alignContent:'center'
+        }}/>
+        </View>
+        <Text h5 
+        style={{
+            backgroundColor:'steelblue',
+            textAlign:'justify',
+            padding:5,
+            color:'#ffff',
+            borderR
+           }}>Podras obtener la variación interanual de la cotización oficial del USD en relación al $AR </Text>
             <Button 
-            title="abre modal" 
+            title="COMENZAR" 
             onPress={()=>handleIsOpen()}/>
+
+
             <Modal visible={isOpen}>
                      <Text h1
                       style={{
@@ -68,6 +90,7 @@ const HomeScreen = props => {
                             </Text>
                     </TouchableOpacity>
      
+                
             </Modal>
         </ScrollView>
     );

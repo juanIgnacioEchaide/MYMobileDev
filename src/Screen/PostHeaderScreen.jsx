@@ -33,7 +33,7 @@ const PostHeaderScreen = props => {
             });
       });
 
-        console.log(stats); 
+        console.log('estas son las stats',stats); 
 
     return (
         <ScrollView> 
