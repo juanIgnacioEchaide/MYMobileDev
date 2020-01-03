@@ -38,6 +38,7 @@ const FetchScreen = props => {
         <ScrollView> 
             <Text>
                 Estoy renderizando
+                
             </Text>
 
          {/*        {
@@ -53,9 +54,7 @@ const FetchScreen = props => {
                     <></>
                 } */}
 
-         {
-         
-         
+         {  
          stats.hits.map(
              item=>
              <TouchableOpacity key={item.objectID}
@@ -78,7 +77,7 @@ const FetchScreen = props => {
 
                     {item.title}
                 </Text>
-            </TouchableOpacity>)} 
+            </TouchableOpacity>)}
         </ScrollView>
         );
     };

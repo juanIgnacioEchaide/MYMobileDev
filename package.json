@@ -16,6 +16,7 @@
     "react-native-elements": "^1.2.7",
     "react-native-gesture-handler": "~1.5.0",
     "react-native-navigation": "^4.0.5",
+    "react-native-navigation-drawer": "^1.2.2",
     "react-native-navigation-stack": "^0.1.2",
     "react-native-vector-icons": "^6.6.0",
     "react-native-web": "~0.11.7",

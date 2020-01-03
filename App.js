@@ -1,16 +1,18 @@
 import { createAppContainer } from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import React from 'react'
-/* import HomeScreen from './src/Screen/HomeScreen'; */
-import FetchScreen from './src/Screen/FetchScreen';
+import {Text} from 'react-native'
+import HomeScreen from './src/Screen/HomeScreen'; 
+/* import PostHeaderScreen from './src/Screen/PostHeaderScreen'; */
 
 const AppNavigator = createStackNavigator({
-  FetchScreen: { screen: FetchScreen }
+  HomeScreen: { screen: HomeScreen }
 }, {
-    headerMode: 'none',
-    navigationOptions: {
-        headerVisible: false,
-    }
+    headerMode: 'screen',
+    
+        navigationOptions: {
+        headerVisible: true,
+      }
 });
 
 const AppContainer = createAppContainer(AppNavigator);
