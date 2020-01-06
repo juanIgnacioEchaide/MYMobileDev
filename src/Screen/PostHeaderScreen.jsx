@@ -8,7 +8,7 @@ const PostHeaderScreen = props => {
        /*//////////////////// FETCH USESTATES ///////////////////////////////// */
     const token = `eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MDk1Mjc4NjcsInR5cGUiOiJleHRlcm5hbCIsInVzZXIiOiJqdWFuLmlnbmFjaW8uZWNoYWlkZUBhY2NlbnR1cmUuY29tIn0.SbYqDXzb9gHHpaHYWsgDPDQ7NpSZpd_kDeRtyQ_n5p6h6FrVkH1-Vqqip-eQFlKmq6Q_qAPYk0PE5N9g-cRYig`
     const[loading, setLoading]=useState(false);
-    const[stats, setStats]=useState({data:[]});
+    const[stats, setStats]=useState([]);
     /* const[query,setQuery]=useState('redux'); */
 
     /*//////////////// CONDITIONAL RENDERING'S LOGIC //////////////////////////*/
@@ -40,8 +40,12 @@ const PostHeaderScreen = props => {
             <Text>
                 Estoy renderizando     
             </Text>
-            {stats.data.map(
-                item=>{<Text>{item.d}</Text>
+            {stats.map(
+                 item=>{
+                 <Text>
+                     {item.d}
+                     {item.v}
+                </Text>
             })}
         </ScrollView>
         );

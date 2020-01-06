@@ -9,7 +9,7 @@ import navIcon from './assets/mobile-nav-icon.png';
 
 
 const AppNavigator = createStackNavigator({
-  HomeScreen: { screen: HomeScreen },
+  PostHeaderScreen: { screen: PostHeaderScreen },
   FetchScreen: {screen:FetchScreen},
 }, {
     defaultNavigationOptions:(props)=>({
