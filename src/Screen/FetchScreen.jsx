@@ -18,6 +18,9 @@ const FetchScreen = props => {
         setOpen(!open);
     }
 
+    const generateJSONHandler=()=>{
+        
+    }
 
  useEffect( 
      ()=>{
