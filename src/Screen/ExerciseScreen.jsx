@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, AsyncStorage, Button } from 'react-native';
 import PropTypes from 'prop-types';
 import Task from '../UI/Task.jsx';
 import OptionPanel from '../UI/OptionPanel.jsx';
-import Feedback from '../UI/FeedBack.jsx';
+import FeedBack from '../UI/FeedBack.jsx';
 import ExcerciseTitle from '../UI/ExcerciseTitle.jsx';
 
 const ExerciseScreen = props => {

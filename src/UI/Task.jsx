@@ -3,14 +3,14 @@ import { View, Text, Button, Image, TextInput, ScrollView, FlatList, Modal,Touch
 
 const Task = props => {
 
-    const[task='a "loyi" is a person that...', command='choose the correct answer']=useState();
+    const[task=[question='a "loyi" is a person that...', order='choose the correct answer']]=useState();
     return (
         <View>
             <View>
-                <Text>{task}</Text>
+                <Text>{task.question}</Text>
             </View>
             <View>
-                <Text>{command}</Text>
+                <Text>{task.order}</Text>
             </View>
         </View>
     );
