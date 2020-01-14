@@ -3,7 +3,7 @@ import { View, Text, Button, Image, TextInput, ScrollView, FlatList, Modal,Touch
 
 const OptionPanel = props => {
 
-    const[options=[{a:'A',b:'C',c:'C',d:'D'}]]=useState();
+/*     const[{a='A',b='C',c='C',d='D'}]=useState(); */
 
     
     
@@ -12,19 +12,20 @@ const OptionPanel = props => {
             borderColor: 'steelblue'
         }}>
             <View style={{ flexDirection: 'row' }}>
-                <TouchableOpacity>
-                    {options.a}
+                
+                <TouchableOpacity style={{height:1}}>
+                    <Text>asds</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                      {options.b}
+                <Text>skfh pias</Text>
                 </TouchableOpacity>
             </View>
             <View style={{ flexDirection: 'row' }}>
                 <TouchableOpacity>
-                     {options.c}
+                <Text>j woueg</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                   {options.d}
+                <Text>sbcbahlsdb</Text>
                 </TouchableOpacity>
             </View>
         </View>

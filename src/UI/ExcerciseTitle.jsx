@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import { StyleSheet, Text, View, AsyncStorage, Button } from 'react-native';
 import PropTypes from 'prop-types';
 
 const ExcerciseTitle = props => {
-    const[exerciseData={module:'I',unit:'I',excercise:'I'}]=useState();
+   /*  const[module='I',unit='I',excercise='I']=useState(); */
 
     return (
         <View>
-            <Text>Module {exerciseData.module}  {exerciseData.unit}  {exerciseData.excercise}</Text>
+            <Text>Titulo</Text>
+        {/*     <Text>{module}  {unit}  {excercise}</Text> */}
         </View>
     );
 };

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Task from '../UI/Task.jsx';
 import OptionPanel from '../UI/OptionPanel.jsx';
 import FeedBack from '../UI/FeedBack.jsx';
-import ExcerciseTitle from '../UI/ExcerciseTitle.jsx';
+import ExcerciseTitle from '../UI/ExcerciseTitle.jsx'
 
 const ExerciseScreen = props => {
     const[answer,setAnswer]=useState(false);
@@ -14,10 +14,12 @@ const ExerciseScreen = props => {
 
     return (
         <View>
-            <ExcerciseTitle/>
-            <Task/>
+           <ExcerciseTitle/>
+             
+                <Task/>
             <OptionPanel/>
-            <FeedBack/>        
+            <FeedBack/>    
+                
         </View>
     );
 };
