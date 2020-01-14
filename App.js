@@ -2,11 +2,11 @@ import { createAppContainer } from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import React, { useState } from 'react'
 import {Text, View, Image,TouchableOpacity} from 'react-native'
-import HomeScreen from './src/Screen/HomeScreen'; 
+import ExerciseScreen from './src/Screen/ExerciseScreen'; 
 
 
 const AppNavigator = createStackNavigator({
-  HomeScreen: { screen: HomeScreen },
+  ExerciseScreen: { screen: ExerciseScreen },
 }, {
     defaultNavigationOptions:(props)=>({
       headerStyle:{

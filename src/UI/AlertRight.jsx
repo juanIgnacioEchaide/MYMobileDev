@@ -13,4 +13,4 @@ Task.propTypes = {
     
 };
 
-export default Task;
+export default AlerRight;

@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const ExcerciseTitle = props => {
-    const[exerciseData=[{module:'I',unit:'I',excercise:'I'}]]
+    const[exerciseData={module:'I',unit:'I',excercise:'I'}]=useState();
 
     return (
         <View>
-<Text>Module : {exerciseData.module} Unit: {exerciseData.unit} Exercise : {exerciseData.excercise}</Text>
+            <Text>Module {exerciseData.module}  {exerciseData.unit}  {exerciseData.excercise}</Text>
         </View>
     );
 };

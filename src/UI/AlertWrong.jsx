@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Button, Image, TextInput, ScrollView, FlatList, Modal,TouchableOpacity } from 'react-native';
 
 const AlertWrong = props => {
-    
+
     const[explanation='correct answer is..']=useState()
 
     return (
@@ -19,4 +19,4 @@ Task.propTypes = {
     
 };
 
-export default Task;
+export default AlertWrong;
