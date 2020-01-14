@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, Button, Image, TextInput, ScrollView, FlatList, Modal,TouchableOpacity } from 'react-native';
 
-const AlerRight = props => {
+const AlertRight = props => {
     return (
         <View>
            <Text>Ok, baby</Text> 
@@ -9,8 +9,5 @@ const AlerRight = props => {
     );
 };
 
-Task.propTypes = {
-    
-};
 
-export default AlerRight;
+export default AlertRight;

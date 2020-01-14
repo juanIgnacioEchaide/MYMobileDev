@@ -15,8 +15,5 @@ const AlertWrong = props => {
     );
 };
 
-Task.propTypes = {
-    
-};
 
 export default AlertWrong;

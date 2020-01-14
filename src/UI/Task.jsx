@@ -16,8 +16,5 @@ const Task = props => {
     );
 };
 
-Task.propTypes = {
-    
-};
 
 export default Task;

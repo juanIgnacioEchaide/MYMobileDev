@@ -7,12 +7,10 @@ const FeedBack = props => {
     return (
         <View>
       {/*       {lacorrecta==laelegida?<AlertRight/>:<AlertWrong/>} */}
+        
         </View>
     );
 };
 
-Task.propTypes = {
-    
-};
 
-export default Task;
+export default FeedBack;
