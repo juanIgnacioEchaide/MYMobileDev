@@ -14,9 +14,8 @@ const ExerciseScreen = props => {
 
     return (
         <View>
-           <ExcerciseTitle/>
-             
-                <Task/>
+           <ExcerciseTitle/>         
+            <Task/>
             <OptionPanel/>
             <FeedBack/>    
                 

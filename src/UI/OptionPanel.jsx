@@ -3,9 +3,7 @@ import { View, Text, Button, Image, TextInput, ScrollView, FlatList, Modal, Touc
 
 const OptionPanel = props => {
 
-    const [a = 'A', b = 'B', c = 'C', d = 'D'] = useState();
-
-
+    const [options=['A','B', 'C', 'D']] = useState();
 
     return (
         <View style={{
@@ -14,18 +12,18 @@ const OptionPanel = props => {
             <View style={{ flexDirection: 'row' }}>
 
                 <TouchableOpacity style={{ height: 1 }}>
-                    <Text>{a}</Text>
+                    <Text>{options[0]}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Text>{b}</Text>
+                    <Text>{options[1]}</Text>
                 </TouchableOpacity>
             </View>
             <View style={{ flexDirection: 'row' }}>
                 <TouchableOpacity>
-                    <Text>{c}</Text>
+                    <Text>{options[2]}</Text>
                 </TouchableOpacity>
                 <TouchableOpacity>
-                    <Text>{d}</Text>
+                    <Text>{options[3]}</Text>
                 </TouchableOpacity>
             </View>
         </View>
